@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFE12F"
+        >
+        <com.example.test.SearchBarView
+            android:id="@+id/searchbarview"
+            android:layout_width="253dp"
+            android:layout_height="32dp"
+            android:layout_margin="8dp"
+            app:layout_collapseMode="pin"
+            app:search_bar_hint_text="测试信息"
+            app:search_bar_icon_open="@mipmap/mm_ic_1"
+            app:search_bar_icon_close="@mipmap/mm_ic_2"
+            app:search_bar_position="position_left"
+            app:search_bar_status="status_open"
+            app:search_bar_icon_open_close_padding="11dp"
+            >
+        </com.example.test.SearchBarView>
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开"
+        android:onClick="openAni"
+        >
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭"
+        android:onClick="closeAni"
+        >
+    </Button>
+</LinearLayout>
